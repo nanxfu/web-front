@@ -73,8 +73,10 @@ nav a:not(:last-child) {
 }
 nav indicator {
     height: 2px;
-    width: 150px;
+    width: 30px;
     background: var(--primary-dark-color);
     position: absolute;
     bottom: -7px;
+    left: 0;
+    display: block;
 }

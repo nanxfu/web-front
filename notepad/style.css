@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    text-align: center;
+    margin: 40px;
+    font-size: 100px;
+    font-weight: lighter;
+    color: coral;
+}
+/* body {
+    background-color: lightslategray;
+} */
+.box {
+    
+    /* display: flex; */
+    /* justify-content: center; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, .60);
+    width: 400px;
+    flex-wrap: wrap;
+    margin:50px auto;
+    overflow: hidden;
+    /* align-content: center; */
+}
+.box input {
+    height: 45px;
+    width: 400px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+
+.box input::placeholder {
+    font-style: italic;
+    color: rgba(0, 0, 0, .18);
+}
+
+.box li {
+    /* display: block; */
+    font-size: 25px;
+    min-height: 45px;
+    /* margin: 0 40px; */
+    padding: 0 10px;
+    /* text-align: center; */
+    line-height: 45px;
+    border-bottom: 1px rgba(0, 0, 0, .55) solid;
+    box-sizing: border-box;
+    position: relative;
+    /* box-sizing: content-box; */
+}
+.box li:hover > span {
+    color: red;
+}
+span {
+    padding: 5px 5px;
+}
+.footer {
+    display: block;
+    height: 30px;
+    /* line-height: 5px; */
+    
+}
+.info {
+    float: left;
+}
+.clear {
+    /* clear: both; */
+    float: right;
+}
+.del {
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    /* line-height: 45px; */
+    /* float: right; */
+    /* clear: both; */
+}
+
