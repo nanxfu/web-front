@@ -1,0 +1,38 @@
+body {
+    font-family:"Microsoft YaHei";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #060c21;
+}
+.box {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #060c21;
+    position: relative;
+}
+.box ::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    z-index: -1;
+    filter: blur(40px);
+}
+.box ::before {
+    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+}
+.content {
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
