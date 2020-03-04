@@ -13,6 +13,7 @@
     font-size: 14px;
     box-sizing: border-box;
     font-family: "Raleway","PingFang SC","Microsoft YaHei";
+    transition: .5s;
 }
 
 .warpper {
@@ -56,6 +57,7 @@ nav {
 .content {
     grid-column: 1 / 8;
     padding: 38px 28px 20px 33px;
+    position: relative;
 }
 
 nav a{
@@ -71,12 +73,92 @@ nav a.active {
 nav a:not(:last-child) {
     margin-right: 40px;
 }
-nav indicator {
+nav .indicator {
     height: 2px;
-    width: 30px;
+    width: 40px;
     background: var(--primary-dark-color);
     position: absolute;
     bottom: -7px;
     left: 0;
     display: block;
+    flex-shrink: 0;
+}
+
+.content section {
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.content section.active-section {
+    opacity: 1;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+ 
+.title h1 {
+    font-size: 2rem;
+    font-weight: 500px;
+}
+
+.title p {
+    color: var(--text-color-gray);
+    margin: 6px 0 18px 0;
+}
+
+.follow-btn {
+    justify-self: end;
+    align-self: flex-start;
+    height: 30px;
+    background-color: var(--primary-dark-color);
+    border: none;
+    color: white;
+    padding: 0 27px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .30);
+    transition: .5s;
+}
+
+.follow-btn:hover {
+    background-color: var(--primary-color);
+}
+.follow-btn .fas {
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.about-me p{
+    color: var(--text-color-dark-gray);
+    font-weight: 300px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+footer ul {
+    display: flex;
+
+}
+
+footer ul li {
+    list-style: none;
+
+}
+
+footer ul li:not(:last-child) {
+    margin-right: 40px;
+}
+
+footer .fab {
+    color: var(--primary-color);
+    font-size: 30px;
 }
